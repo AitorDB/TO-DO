@@ -1,0 +1,46 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "To Do App",
+  "author": "AitorDB",
+  "private": true,
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production node build/main.js",
+    "precommit": "npm run lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcrypt-as-promised": "^1.1.0",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cross-env": "^5.0.1",
+    "express": "^4.15.3",
+    "helmet": "^3.12.0",
+    "joi": "^13.1.2",
+    "js-cookie": "^2.2.0",
+    "jwt-simple": "^0.5.1",
+    "moment": "^2.21.0",
+    "mongoose": "^5.0.9",
+    "node-sass": "^4.7.2",
+    "nuxt": "^1.0.0-rc3",
+    "pug": "^2.0.0",
+    "sass-loader": "^6.0.7",
+    "source-map-support": "^0.4.15",
+    "vuetify": "^1.0.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "backpack-core": "^0.4.1",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
